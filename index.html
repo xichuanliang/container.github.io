@@ -176,7 +176,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-28 23:32:39" itemprop="dateModified" datetime="2023-11-28T23:32:39+08:00">2023-11-28</time>
+                <time title="修改时间：2023-11-28 23:39:07" itemprop="dateModified" datetime="2023-11-28T23:39:07+08:00">2023-11-28</time>
               </span>
 
           
@@ -190,7 +190,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>该文只介绍clusterctl的generate命令，源码在cluster-api中。以下分析仅作参考。<br>clusterctl generate用于根据给定的template生成对应的yaml，从而创建cluster-api所需的yaml资源，如cluster、machinedeployment、kubeadmcontrolplane等。上述资源供cluster-api生成一个k8s集群。</p>
+          <p>该文只介绍clusterctl的generate命令，源码在cluster-api中。以下分析仅作参考。<br>同时，在<a target="_blank" rel="noopener" href="https://github.com/xichuanliang/yamlv1%E4%B8%AD%E6%8F%90%E5%8F%96%E4%BA%86clusterctl">https://github.com/xichuanliang/yamlv1中提取了clusterctl</a> gengerate的代码用于读取本地template文件和conf文件，初始化template<br>clusterctl generate用于根据给定的template生成对应的yaml，从而创建cluster-api所需的yaml资源，如cluster、machinedeployment、kubeadmcontrolplane等。上述资源供cluster-api生成一个k8s集群。</p>
 <ul>
 <li><p>clustectl中的命令都是基于cobra框架而生成的</p>
 </li>
